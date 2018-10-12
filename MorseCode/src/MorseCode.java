@@ -1,0 +1,127 @@
+import java.util.Scanner;
+
+public class MorseCode {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String x = scan.nextLine();
+		String output = "";
+		String result = "";
+		for (int i = 0; i < x.length(); i++){
+			switch (x.charAt(i)){
+			case 'a':  output = "•–";
+			break;
+			case 'b':  output = "–•••";
+			break;
+			case 'c':  output = "–•–•";
+			break;
+			case 'd':  output = "–••";
+			break;
+			case 'e':  output = "•";
+			break;
+			case 'f':  output = "••–•";
+			break;
+			case 'g':  output = "––•";
+			break;
+			case 'h':  output = "••••";
+			break;
+			case 'i':  output = "••";
+			break;
+			case 'j': output = "•–––";
+			break;
+			case 'k': output = "–•–";
+			break;
+			case 'l': output = "•–••";
+			break;
+			case 'm': output = "––";
+			break;
+			case 'n': output = "–•";
+			break;
+			case 'o': output = "–––";
+			break;
+			case 'p': output = "•––•";
+			break;
+			case 'q': output = "––•–";
+			break;
+			case 'r': output = "•–•";
+			break;
+			case 's'|'S': output = "•••";
+			break;
+			case 't'|'T': output = "–";
+			break;
+			case 'u'|'U': output = "••–";
+			break;
+			case 'v'|'V': output = "•••–";
+			break;
+			case 'w'|'W': output = "•––";
+			break;
+			case 'x'|'X': output = "–••–";
+			break;
+			case 'y'|'Y': output = "–•––";
+			break;
+			case 'z': output = "––••";
+			break;
+			case 'A':  output = "•–";
+			break;
+			case 'B':  output = "–•••";
+			break;
+			case 'C':  output = "–•–•";
+			break;
+			case 'D':  output = "–••";
+			break;
+			case 'E':  output = "•";
+			break;
+			case 'F':  output = "••–•";
+			break;
+			case 'G':  output = "––•";
+			break;
+			case 'H':  output = "••••";
+			break;
+			case 'I':  output = "••";
+			break;
+			case 'J': output = "•–––";
+			break;
+			case 'K': output = "–•–";
+			break;
+			case 'L': output = "•–••";
+			break;
+			case 'M': output = "––";
+			break;
+			case 'N': output = "–•";
+			break;
+			case 'O': output = "–––";
+			break;
+			case 'P': output = "•––•";
+			break;
+			case 'Q': output = "––•–";
+			break;
+			case 'R': output = "•–•";
+			break;
+			case 'S': output = "•••";
+			break;
+			case 'T': output = "–";
+			break;
+			case 'U': output = "••–";
+			break;
+			case 'V': output = "•••–";
+			break;
+			case 'W': output = "•––";
+			break;
+			case 'X': output = "–••–";
+			break;
+			case 'Y': output = "–•––";
+			break;
+			case 'Z': output = "––••";
+			break;
+			case ' ': output = " ";
+			break;
+			default: output = "Invalid";
+			break;
+			}
+			result += output;
+		}
+		System.out.println("The original message is: "+ x);
+		System.out.print("The message Translated into Morse Code is: "+result);
+	}
+
+}
